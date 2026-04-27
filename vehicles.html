@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicles — Uni Students Car Rental</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="header-logo" href="index.html" aria-label="Uni Students Car Rental — home">
+      <img src="assets/logo-mark.svg" alt="Uni Students Car Rental logo"/>
+    </a>
+    <span class="header-title">Our Vehicles</span>
+  </header>
+
+  <!-- Primary nav -->
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <div class="nav-header-row">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul id="nav-list" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vehicles.html" class="active" aria-current="page">Vehicles</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main">
+    <div class="page-wrapper">
+      <div class="vehicles-layout">
+
+        <!-- Secondary nav -->
+        <nav class="secondary-nav" aria-label="Vehicle categories">
+          <ul role="list">
+            <li><a href="#small">Small</a></li>
+            <li><a href="#medium">Medium</a></li>
+            <li><a href="#suv">SUV</a></li>
+            <li><a href="#ute">Ute &amp; Van</a></li>
+          </ul>
+        </nav>
+
+        <!-- Vehicle sections -->
+        <div class="vehicle-sections">
+
+          <section id="small" aria-labelledby="small-heading">
+            <div class="vehicle-card">
+              <div class="vehicle-card-image">
+                <img src="assets/car-small.svg" alt="Orange small hatchback car"/>
+              </div>
+              <div class="vehicle-card-text">
+                <h2 id="small-heading">Small</h2>
+                <p class="price">From $39/day</p>
+                <p class="examples">Hyundai i30, Mazda2</p>
+                <p class="best-for">Best for city driving, parking on campus, and fuel economy. Easy to manoeuvre and cheap to run.</p>
+                <a href="contact.html" class="btn btn-orange" style="margin-top:12px">Book this class</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="medium" aria-labelledby="medium-heading">
+            <div class="vehicle-card">
+              <div class="vehicle-card-image">
+                <img src="assets/car-medium.svg" alt="Navy blue medium sedan car"/>
+              </div>
+              <div class="vehicle-card-text">
+                <h2 id="medium-heading">Medium</h2>
+                <p class="price">From $55/day</p>
+                <p class="examples">Toyota Corolla, Mazda3</p>
+                <p class="best-for">Best for weekend trips and comfortable travel for four students. Smooth highway cruiser.</p>
+                <a href="contact.html" class="btn btn-orange" style="margin-top:12px">Book this class</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="suv" aria-labelledby="suv-heading">
+            <div class="vehicle-card">
+              <div class="vehicle-card-image">
+                <img src="assets/car-suv.svg" alt="Dark green SUV with roof rack"/>
+              </div>
+              <div class="vehicle-card-text">
+                <h2 id="suv-heading">SUV</h2>
+                <p class="price">From $79/day</p>
+                <p class="examples">Hyundai Tucson, Mitsubishi ASX</p>
+                <p class="best-for">Best for group trips, road trips, and light off-road. Fits five passengers with luggage.</p>
+                <a href="contact.html" class="btn btn-orange" style="margin-top:12px">Book this class</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="ute" aria-labelledby="ute-heading">
+            <div class="vehicle-card">
+              <div class="vehicle-card-image">
+                <img src="assets/car-ute.svg" alt="White ute with open tray"/>
+              </div>
+              <div class="vehicle-card-text">
+                <h2 id="ute-heading">Ute &amp; Van</h2>
+                <p class="price">From $89/day</p>
+                <p class="examples">Toyota Hilux, Toyota HiAce</p>
+                <p class="best-for">Best for moving day, surfboards, and large furniture. Serious load capacity for the big jobs.</p>
+                <a href="contact.html" class="btn btn-orange" style="margin-top:12px">Book this class</a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Uni Students Car Rental &nbsp;|&nbsp; (08) 9000 1234 &nbsp;|&nbsp;
+      <a href="mailto:hello@unistudentscarrental.com.au">hello@unistudentscarrental.com.au</a>
+      &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; &copy; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

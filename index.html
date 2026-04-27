@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home — Uni Students Car Rental</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="header-logo" href="index.html" aria-label="Uni Students Car Rental — home">
+      <img src="assets/logo-mark.svg" alt="Uni Students Car Rental logo"/>
+    </a>
+    <span class="header-title">Welcome to Uni Students Car Rental</span>
+  </header>
+
+  <!-- Primary nav -->
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <div class="nav-header-row">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul id="nav-list" role="list">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main">
+    <div class="page-wrapper">
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-text">
+          <h1 id="hero-heading">Affordable car hire built for students.</h1>
+          <p>Need wheels for a road trip, a job interview, or a quick run home for the weekend? Uni Students Car Rental offers low daily rates, a flexible mixed fleet, and pick-up points right next to UWA, Curtin, ECU and Murdoch. Show your student ID at booking to unlock the student rate.</p>
+          <div class="hero-buttons">
+            <a href="vehicles.html" class="btn btn-orange">See vehicles &rarr;</a>
+            <a href="contact.html" class="btn btn-navy-outline">Get a quote</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/hero-student.svg" alt="Smiling student holding car keys saying 'Got my car!'"/>
+        </div>
+      </section>
+
+      <!-- Feature cards -->
+      <section aria-labelledby="features-heading">
+        <h2 id="features-heading" class="visually-hidden">Why choose us</h2>
+        <div class="feature-cards">
+          <div class="card">
+            <h3>Cheap rates</h3>
+            <p>From $39/day with a valid student ID. No booking fee.</p>
+          </div>
+          <div class="card">
+            <h3>Easy pick-up</h3>
+            <p>Five depots within walking distance of Perth's main campuses.</p>
+          </div>
+          <div class="card">
+            <h3>Mixed fleet</h3>
+            <p>Small, medium, SUV, ute and van options. Pick what fits the trip.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Uni Students Car Rental &nbsp;|&nbsp; (08) 9000 1234 &nbsp;|&nbsp;
+      <a href="mailto:hello@unistudentscarrental.com.au">hello@unistudentscarrental.com.au</a>
+      &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; &copy; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

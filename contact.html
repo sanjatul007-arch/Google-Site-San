@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Uni Students Car Rental</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="header-logo" href="index.html" aria-label="Uni Students Car Rental — home">
+      <img src="assets/logo-mark.svg" alt="Uni Students Car Rental logo"/>
+    </a>
+    <span class="header-title">Contact Us</span>
+  </header>
+
+  <!-- Primary nav -->
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <div class="nav-header-row">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul id="nav-list" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main">
+    <div class="page-wrapper">
+      <div class="contact-layout">
+
+        <!-- Contact info -->
+        <div class="contact-info">
+          <h1>Get in touch.</h1>
+          <p>Have a question or want to make a booking? Reach out and our team will reply within one business day.</p>
+
+          <ul class="contact-list" aria-label="Contact details">
+            <li>
+              <span class="label">Phone</span>
+              <a href="tel:0890001234">(08) 9000 1234</a>
+            </li>
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:hello@unistudentscarrental.com.au">hello@unistudentscarrental.com.au</a>
+            </li>
+            <li>
+              <span class="label">Office</span>
+              <span>12 Hackett Drive, Crawley WA 6009</span>
+            </li>
+            <li>
+              <span class="label">Hours</span>
+              <span>Mon–Sat 7am–7pm; Sundays by appointment</span>
+            </li>
+            <li>
+              <span class="label">Instagram</span>
+              <a href="https://instagram.com/unistudentscarrental" target="_blank" rel="noopener">@unistudentscarrental</a>
+            </li>
+            <li>
+              <span class="label">Facebook</span>
+              <a href="https://facebook.com/unistudentscarrental" target="_blank" rel="noopener">/unistudentscarrental</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Booking enquiry form -->
+        <div class="contact-form-box">
+          <h2>Booking enquiry</h2>
+          <form
+            action="#"
+            onsubmit="event.preventDefault(); alert('Thanks — we\'ll reply within one business day.'); return false;"
+            novalidate
+            aria-label="Booking enquiry form"
+          >
+
+            <div class="form-group">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name"/>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="04xx xxx xxx"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pickup-location">Pick-up location <span aria-hidden="true">*</span></label>
+                <select id="pickup-location" name="pickup-location" required>
+                  <option value="" disabled selected>Select a depot</option>
+                  <option value="crawley">Crawley</option>
+                  <option value="bentley">Bentley</option>
+                  <option value="joondalup">Joondalup</option>
+                  <option value="mt-lawley">Mt Lawley</option>
+                  <option value="murdoch">Murdoch</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="vehicle-class">Vehicle class <span aria-hidden="true">*</span></label>
+                <select id="vehicle-class" name="vehicle-class" required>
+                  <option value="" disabled selected>Select a class</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="suv">SUV</option>
+                  <option value="ute-van">Ute &amp; Van</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pickup-date">Pick-up date</label>
+                <input type="date" id="pickup-date" name="pickup-date"/>
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return date</label>
+                <input type="date" id="return-date" name="return-date"/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span style="font-weight:normal;color:var(--text-muted)">(optional)</span></label>
+              <textarea id="message" name="message" placeholder="Any questions or special requirements…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-orange">Send enquiry</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Uni Students Car Rental &nbsp;|&nbsp; (08) 9000 1234 &nbsp;|&nbsp;
+      <a href="mailto:hello@unistudentscarrental.com.au">hello@unistudentscarrental.com.au</a>
+      &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; &copy; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

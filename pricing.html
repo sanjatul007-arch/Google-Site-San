@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing — Uni Students Car Rental</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="header-logo" href="index.html" aria-label="Uni Students Car Rental — home">
+      <img src="assets/logo-mark.svg" alt="Uni Students Car Rental logo"/>
+    </a>
+    <span class="header-title">Student Pricing</span>
+  </header>
+
+  <!-- Primary nav -->
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <div class="nav-header-row">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul id="nav-list" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="pricing.html" class="active" aria-current="page">Pricing</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main">
+    <div class="page-wrapper">
+
+      <!-- Intro + table -->
+      <section aria-labelledby="pricing-heading" class="pricing-layout">
+        <div class="pricing-intro">
+          <h1 id="pricing-heading">Simple, student-friendly rates.</h1>
+          <p>All prices include unlimited kilometres within Western Australia, basic insurance, and 24/7 roadside assistance. Show your student ID at booking and the student rate is automatically applied.</p>
+          <a href="contact.html" class="btn btn-orange" style="align-self:flex-start;margin-top:8px">Get a quote &rarr;</a>
+        </div>
+
+        <div>
+          <table class="pricing-table" aria-label="Vehicle pricing by class and duration">
+            <thead>
+              <tr>
+                <th scope="col">Vehicle class</th>
+                <th scope="col">Daily rate</th>
+                <th scope="col">Weekly rate</th>
+                <th scope="col">Monthly rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Small (i30, Mazda2)</td>
+                <td>$39</td>
+                <td>$245</td>
+                <td>$899</td>
+              </tr>
+              <tr>
+                <td>Medium (Corolla, Mazda3)</td>
+                <td>$55</td>
+                <td>$345</td>
+                <td>$1,249</td>
+              </tr>
+              <tr>
+                <td>SUV (Tucson, ASX)</td>
+                <td>$79</td>
+                <td>$489</td>
+                <td>$1,799</td>
+              </tr>
+              <tr>
+                <td>Ute / Van (Hilux, HiAce)</td>
+                <td>$89</td>
+                <td>$549</td>
+                <td>$1,999</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- What's included + extras -->
+      <section aria-labelledby="included-heading" class="pricing-details">
+        <div>
+          <h2 id="included-heading">What's included</h2>
+          <ul>
+            <li>Unlimited kilometres within Western Australia</li>
+            <li>Basic insurance and damage liability cover</li>
+            <li>24/7 roadside assistance anywhere in Australia</li>
+            <li>Free additional driver (must hold a valid licence)</li>
+            <li>GST included; no booking fee, no airport surcharge</li>
+          </ul>
+        </div>
+
+        <div class="extras">
+          <h2 id="extras-heading">Optional extras</h2>
+          <ul aria-labelledby="extras-heading">
+            <li>Premium insurance with reduced excess: +$15/day</li>
+            <li>GPS unit: +$5/day</li>
+            <li>Child / booster seat: +$8/day</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Uni Students Car Rental &nbsp;|&nbsp; (08) 9000 1234 &nbsp;|&nbsp;
+      <a href="mailto:hello@unistudentscarrental.com.au">hello@unistudentscarrental.com.au</a>
+      &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; &copy; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
